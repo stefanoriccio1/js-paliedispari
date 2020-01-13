@@ -5,27 +5,23 @@
 // vinto (controlliamo se la somma da pari o dispari).
 
 var scelta = prompt('Scegli pari o dispari?');
-console.log(scelta);
+// console.log(scelta);
 
 var numero = parseInt(prompt('indica un numero da 1 a 5'));
-console.log(numero);
+// console.log(numero);
 
-// var random = Math.floor(Math.random() * 10);
-// console.log(random);
+var numeroCheck = (numero + randomGenerator(1, 10));
+// console.log(numeroCheck);
 
-// if (scelta == 'pari' && ((numero + randomGenerator) % 2 ==0)){
-//  console.log('hai vinto');
-// }
-// else if (scelta == 'dispari' && ((numero + randomGenerator) %2 != 0)) {
-//   console.log('hai vinto');
-// }
-// else {
-//   console.log('hai perso');
-// }
-
-var numeroCheck = (numero + parseInt(randomGenerator));
-console.log(numeroCheck);
-
+if (scelta == 'pari' && isEven() == true){
+ alert('hai vinto');
+}
+else if (scelta == 'dispari' && isEven()== false) {
+  alert('hai vinto');
+}
+else {
+  alert('hai perso');
+}
 
 // ------- funzioni
 // random
@@ -35,14 +31,15 @@ function randomGenerator (min, max){
   var random = Math.floor(Math.random() * (max - min + 1));
   return random;
 }
-console.log(randomGenerator);
+
 
 // pari
 function isEven (){
-  if (numero % 2 == 0) {
+  if (numeroCheck % 2 == 0) {
     return true;
   }
   else{
     return false;
   }
 }
+console.log(isEven());
