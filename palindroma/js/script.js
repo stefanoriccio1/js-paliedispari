@@ -4,7 +4,8 @@
 
 var parola = prompt ('inserisci una parola');
 
-// console.log(parola [parola.length -= parola.length]);
+
+console.log(parola [parola.length -= parola.length]);
 var primaLettera = parola [parola.length -= parola.length]
 console.log(primaLettera);
 // console.log(parola [parola.length - 1]);
@@ -14,8 +15,11 @@ console.log(ultimaLettera);
 var secondaLettera = parola [(parola.length -= parola.length) +1];
 console.log(secondaLettera);
 
-if (i=0, i<parola.length, i++)
-if (i= parola.length, i =0, i--)
+// if (i=0, i<parola.length, i++)
+var parolaReverse = 0
+if (i= parola.length, i >=0, i--){
+  console.log(parolaReverse += [i]);
+}
 // for (i=0; i< parola.length i++){
 //
 // }
