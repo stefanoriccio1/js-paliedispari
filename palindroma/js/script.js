@@ -4,21 +4,24 @@
 
 var parola = prompt ('inserisci una parola');
 
+var parolaGirata = rovesciaParola(parola);
+console.log(parolaGirata);
 
-console.log(parola [parola.length -= parola.length]);
-var primaLettera = parola [parola.length -= parola.length]
-console.log(primaLettera);
-// console.log(parola [parola.length - 1]);
-var  ultimaLettera = parola [parola.length - 1];
-console.log(ultimaLettera);
-// console.log(parola [(parola.length -= parola.length) +1]);
-var secondaLettera = parola [(parola.length -= parola.length) +1];
-console.log(secondaLettera);
+if (parolaGirata == parolaUtente){
+  alert ('è palindroma')
+}
+else (parolaGirata != parolaUtente){
+alert ('non è palindroma')
+}
 
-// if (i=0, i<parola.length, i++)
-var parolaReverse = 0
-if (i= parola.length, i >=0, i--){
-  console.log(parolaReverse += [i]);
+// -----Function
+
+function rovesciaParola(parolax){
+  var parolaReverse = '';
+  for (var i = parolax.length - 1; i >=0; i--){
+    parolaReverse += parola [i];
+  }
+  return parolaReverse;
 }
 // for (i=0; i< parola.length i++){
 //
@@ -33,3 +36,16 @@ if (i= parola.length, i >=0, i--){
 // console.log(parola[i]);
 // if (parola[i])
 // }
+
+
+// // console.log(parola [parola.length -= parola.length]);
+// var primaLettera = parola [parola.length -= parola.length]
+// // console.log(primaLettera);
+// // console.log(parola [parola.length - 1]);
+// var  ultimaLettera = parola [parola.length - 1];
+// // console.log(ultimaLettera);
+// // console.log(parola [(parola.length -= parola.length) +1]);
+// var secondaLettera = parola [(parola.length -= parola.length) +1];
+// // console.log(secondaLettera);
+//
+// // if (i=0, i<parola.length, i++)

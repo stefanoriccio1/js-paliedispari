@@ -13,10 +13,10 @@ var numero = parseInt(prompt('indica un numero da 1 a 5'));
 var numeroCheck = (numero + randomGenerator(1, 10));
 console.log(numeroCheck);
 
-if (scelta == 'pari' && isEven() == true){
+if (scelta == 'pari' && isEven(numeroCheck) == true){
  alert('hai vinto');
 }
-else if (scelta == 'dispari' && isEven()== false) {
+else if (scelta == 'dispari' && isEven(numeroCheck)== false) {
   alert('hai vinto');
 }
 else {
@@ -34,8 +34,8 @@ function randomGenerator (min, max){
 
 
 // pari
-function isEven (){
-  if (numeroCheck % 2 == 0) {
+function isEven (numero){
+  if (numero % 2 == 0) {
     return true;
   }
   else{
