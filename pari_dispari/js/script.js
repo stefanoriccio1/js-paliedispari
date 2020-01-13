@@ -13,10 +13,10 @@ console.log(numero);
 var random = Math.floor(Math.random() * 10);
 console.log(random);
 
-if (scelta == pari && ((numero + random) % 2 ==0)){
+if (scelta == 'pari' && ((numero + random) % 2 ==0)){
  console.log('hai vinto');
 }
-else if (scelta == dispari && ((numero + random) %2 != 0)) {
+else if (scelta == 'dispari' && ((numero + random) %2 != 0)) {
   console.log('hai vinto');
 }
 else {
