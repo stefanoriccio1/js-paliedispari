@@ -11,7 +11,7 @@ var numero = parseInt(prompt('indica un numero da 1 a 5'));
 // console.log(numero);
 
 var numeroCheck = (numero + randomGenerator(1, 10));
-// console.log(numeroCheck);
+console.log(numeroCheck);
 
 if (scelta == 'pari' && isEven() == true){
  alert('hai vinto');
