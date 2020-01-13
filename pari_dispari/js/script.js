@@ -10,18 +10,21 @@ console.log(scelta);
 var numero = parseInt(prompt('indica un numero da 1 a 5'));
 console.log(numero);
 
-var random = Math.floor(Math.random() * 10);
-console.log(random);
+// var random = Math.floor(Math.random() * 10);
+// console.log(random);
 
-if (scelta == 'pari' && ((numero + random) % 2 ==0)){
- console.log('hai vinto');
-}
-else if (scelta == 'dispari' && ((numero + random) %2 != 0)) {
-  console.log('hai vinto');
-}
-else {
-  console.log('hai perso');
-}
+// if (scelta == 'pari' && ((numero + randomGenerator) % 2 ==0)){
+//  console.log('hai vinto');
+// }
+// else if (scelta == 'dispari' && ((numero + randomGenerator) %2 != 0)) {
+//   console.log('hai vinto');
+// }
+// else {
+//   console.log('hai perso');
+// }
+
+var numeroCheck = (numero + parseInt(randomGenerator));
+console.log(numeroCheck);
 
 
 // ------- funzioni
@@ -32,10 +35,11 @@ function randomGenerator (min, max){
   var random = Math.floor(Math.random() * (max - min + 1));
   return random;
 }
+console.log(randomGenerator);
 
 // pari
-function isEven (numero){
-  if (numeroUtente % 2 == 0) {
+function isEven (){
+  if (numero % 2 == 0) {
     return true;
   }
   else{
