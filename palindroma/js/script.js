@@ -1,51 +1,22 @@
-// alert ('ciao');
 
-// Scrivi una funzione per capire se la parola è palindroma
+var parolaUtente = prompt ('inserisci una parola');
 
-var parola = prompt ('inserisci una parola');
-
-var parolaGirata = rovesciaParola(parola);
+var parolaGirata = rovesciaParola(parolaUtente);
 console.log(parolaGirata);
 
 if (parolaGirata == parolaUtente){
-  alert ('è palindroma')
+  alert ('è palindroma');
 }
-else (parolaGirata != parolaUtente){
-alert ('non è palindroma')
+else{
+alert ('non è palindroma');
 }
 
-// -----Function
 
-function rovesciaParola(parolax){
+function rovesciaParola(parolaf){
   var parolaReverse = '';
-  for (var i = parolax.length - 1; i >=0; i--){
-    parolaReverse += parola [i];
+
+  for (var i = parolaf.length - 1; i >=0; i--){
+    parolaReverse += parolaf [i];
   }
   return parolaReverse;
 }
-// for (i=0; i< parola.length i++){
-//
-// }
-// var sliced = parola.slice(0,2);
-// console.log(sliced);
-//
-// var sliced2 = parola.slice(2,4);
-// console.log(sliced2);
-
-// for (i=0; i < parola.length; i++){
-// console.log(parola[i]);
-// if (parola[i])
-// }
-
-
-// // console.log(parola [parola.length -= parola.length]);
-// var primaLettera = parola [parola.length -= parola.length]
-// // console.log(primaLettera);
-// // console.log(parola [parola.length - 1]);
-// var  ultimaLettera = parola [parola.length - 1];
-// // console.log(ultimaLettera);
-// // console.log(parola [(parola.length -= parola.length) +1]);
-// var secondaLettera = parola [(parola.length -= parola.length) +1];
-// // console.log(secondaLettera);
-//
-// // if (i=0, i<parola.length, i++)
